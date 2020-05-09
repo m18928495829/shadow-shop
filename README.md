@@ -21,11 +21,9 @@ Mainstream Linux distributions are supported. Mac OS and Windows are not support
     cd ~/shadow-shop
     sudo sh init.sh
     ```
-    During this step, you have to specify the `state` and `doamin name` of your website. You may choose to run your website either in `development` or `production` state. Then you need input the `domain name` to be used by the your website. 
-    
-    Before proceeding to this step, if you plan to choose `production` state, then you have to make sure that the `domain name` you are going to input indeed points to the IP address of the server that is running this software. Otherwise, the sofeware will NOT be able to get a valid digital certificate for you website later on.
-
-## Website Maintainence 
+  At this step, you have to specify the `state` and `doamin name` of your website. You may choose to run your website either as `development` or `production`. For production environment(where you are selling your shadowsock services), please make sure you input the corret domain name for the internet users to access you website. Failing to specify the domain name for production environment will result in invalid digital certificates later on.
+  
+## The following commands are using for Website Maintainence -- Please also refer to official docker and docker-compose website
 
 1. Create and run website:
     ```
@@ -63,7 +61,7 @@ Mainstream Linux distributions are supported. Mac OS and Windows are not support
     docker-compose ps
     ```
 
-## Install Wordpress
+## Install Wordpress and woocommerce 
 
 Once you have brought up your website for the first time, you may install Wordpress by typing in a web browser the domain name that your provided during the `Initialize` step. 
 
