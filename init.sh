@@ -96,7 +96,7 @@ fi
 if ! command -v docker-compose > /dev/null 2>&1
 then
     # Install docker-compose
-    sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
     EXIT_CODE=$?
     if [ $EXIT_CODE -gt 0 ]
     then
